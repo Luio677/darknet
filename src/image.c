@@ -240,6 +240,7 @@ void draw_bbox(image a, box bbox, int w, float r, float g, float b)
     for(i = 0; i < w; ++i){
         draw_box(a, left+i, top+i, right-i, bot-i, r, g, b);
     }
+    printf("Bounding Box: Left=%d, Top=%d, Right=%d, Bottom=%d\n", left, top, right, bot);
 }
 
 image **load_alphabet()
